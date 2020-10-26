@@ -3,14 +3,16 @@ import java.util.regex.Pattern;
 
 public class test {
     public static void main(String[] args) {
-        String inputString = "Alive*is*Awesome$";
-        Pattern pattern = Pattern.compile("[^a-zA-Z0-9]");
-        Matcher matcher = pattern.matcher(inputString);
-        boolean isStringContainsSpecialCharacter = matcher.find();
-        if(isStringContainsSpecialCharacter)
-            System.out.println(inputString+ " contains special character");
-        else
-            System.out.println(inputString+ " does NOT contain special character");
+            String str = "Bài tập Java - ngockhuong.com!";
+            System.out.println("Chuỗi gốc: " + str);
+            // Lấy ký tự tại vị trí thứ 0 và thứ 10 từ chuỗi kia
+            int index1 = str.charAt(0);
+            int index2 = str.charAt(10);
+
+            // In kết quả
+            System.out.println("Ký tự tại vị trí thứ 0: " + index1);
+            System.out.println("Ký tự tại vị trí thứ 10: " + (char) index2);
+
 
     }
 }
