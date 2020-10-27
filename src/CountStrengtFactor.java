@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Ex07 {
+public class CountStrengtFactor {
     public static void main(String[] args) {
         System.out.println("Hello World");
         Scanner sc = new Scanner(System.in);
@@ -30,34 +30,35 @@ public class Ex07 {
         if (passWord.length() > strLenght) {
             count += 1;
         }
-        for (int i = 0; i < passWord.length(); i++) {
+        A :for (int i = 0; i < passWord.length(); i++) {
             char value = passWord.charAt(i);
-
-            A:
             for (Object o : al) {
                 if (value == (char) o) {
                     count += 1;
                     break A;
                 }
             }
-
-            B:
+        }
+       B: for (int i = 0; i < passWord.length(); i++) {
+            char value = passWord.charAt(i);
             for (Object alCap : alCaps) {
                 if (value == (char) alCap) {
                     count += 1;
                     break B;
                 }
             }
-
-            C:
+        }
+       C: for (int i = 0; i < passWord.length(); i++) {
+            char value = passWord.charAt(i);
             for (Object o : number) {
                 if (value == (char) o) {
                     count += 1;
                     break C;
                 }
             }
-
-            D:
+        }
+       D: for (int i = 0; i < passWord.length(); i++) {
+            char value = passWord.charAt(i);
             for (char c : charArray) {
                 if (value == c) {
                     count += 1;
