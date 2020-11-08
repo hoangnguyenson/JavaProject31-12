@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class SortOfArrInt {
 
+    //Bubble sort
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.print("Nhập số phần tử của mảng: ");
         int n = scanner.nextInt();
-            int[] arr = new int[n];
+        int[] arr = new int[n];
 
         // khởi tạo arr
 
@@ -41,3 +42,21 @@ public class SortOfArrInt {
         }
     }
 }
+/*
+4, 1, 2, 3, 5
+
+[4, 1, 2, 3, 5]
+1, 4, 2, 3, 5
+
+1, [4, 2, 3, 5]
+1, 2, 4, 3, 5
+
+1, 2, [4, 3, 5]
+1, 2, 3, 4, 5
+
+1, 2, 3, [4, 5]
+1, 2, 3, 4, 5
+
+1, 2, 3, 4, [5]  _
+
+ */
